@@ -8,7 +8,8 @@ function strlen(arr, sort)
     {
         arr.sort((a, b) => b-a);
     }
-    console.log(arr);
+    
+    return arr;
 }
 
 strlen([14, 7, 17, 6, 8], 'asc')
