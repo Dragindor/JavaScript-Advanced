@@ -159,7 +159,7 @@ function solution(stringArr)
     }
 }
 
-//let manager = solution(); //ti kak go nameri
+//let manager = solution(); 
 
 console.log(solution("restock flavour 50")); // Success
 
@@ -174,6 +174,6 @@ console.log(solution("prepare lemonade 4")); // Error: not enough carbohydrate i
 
 //restock flavour 10 Success
 //prepare apple 1 Success
-//report protein=0 carbohydrate=4 fat=3 flavour=55 judge wont like it try it in judge DO IT IN JUDGE FIRST AND I WILL GIVE YOU ACCESS
+//report protein=0 carbohydrate=4 fat=3 flavour=55
 //restock fat 10 Success
 //prepare burger 1 Success 
