@@ -1,14 +1,18 @@
-    let n1 = 0, n2 = 1, nextTNum;
-    function fib()
+function getFibonator()
+{
+    let current;
+    let n1 = 0, n2 = 1, n3 = current;
+    return function fib()
     {
-        nextTNum = n1 + n2;
+        n3 = n1 + n2;
         n1 = n2;
-        n2 = nextTNum;
+        n2 = n3;
         
-        return nextTNum;
+        return n1;
     }
-    
-    //let fib = getFibonator();
+
+}
+    let fib = getFibonator();
 
     console.log(fib()); // 1
     
