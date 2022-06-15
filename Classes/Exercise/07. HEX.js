@@ -16,15 +16,15 @@ class Hex
         return new Hex(result);
     }
 
-    plus(obj)
+    minus(obj)
     {
         let result = this.param - Number(obj.valueOf())
         return new Hex(result);
     }
 
-    toSting()
+    toString()
     {
-        return '0x' + this.param.toSting(16).toUpperCase();
+        return '0x' + this.param.toString(16).toUpperCase();
     }
 
     parse(str)
