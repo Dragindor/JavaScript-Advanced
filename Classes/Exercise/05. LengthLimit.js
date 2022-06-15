@@ -3,34 +3,27 @@ class Stringer
     constructor(string, length)
     {
         this.innerString = string;
-        this.innerlength = length;
+        this.innerLength = length;
     }
 
     increase(num)
     {
-        this.innerlength += num;
+        this.innerLength += num;
     }
 
     decrease(num)
     {
-        if (this.innerlength - num < 0) 
-        {
-            this.innerlength = 0;
-        }
-        else
-        {
-            this.innerlength -= num;
+        if (this.innerLength - num < 0) {
+            this.innerLength = 0;
+        } else{
+            this.innerLength -= num;
         }
     }
+
     toString()
     {
-        if (this.innerlength < this.innerString.length) 
-        {
-            return this.innerString.substring(0, this.innerlength) + '...';    
-        }
-        else
-        {
-            return this.innerString;
+        if (this.innerLength < this.innerString.length) {
+            return this.innerString.substring(0, this.innerLength) + '...';
         }
     }
 }
